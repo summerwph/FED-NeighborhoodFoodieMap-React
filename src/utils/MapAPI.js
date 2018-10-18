@@ -1,3 +1,5 @@
+// Build FOURSQUARE API
+
 class APIBuilder {
   static baseURL() {
       return "https://api.foursquare.com/v2/venues/";

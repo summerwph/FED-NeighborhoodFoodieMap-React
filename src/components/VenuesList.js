@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ListItem from './ListItem';
 
+//Wrapping the ListItems to VenuesList
 class VenuesList extends Component {
   render() {
     return (

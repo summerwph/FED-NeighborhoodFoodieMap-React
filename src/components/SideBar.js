@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import VenuesList from './VenuesList';
 
+//Showing the title, filter textbox, View List
 class SideBar extends Component {
   state = {
-    query: "",
-    venues: []
+    query: "", //The filter
+    venues: [] //Save filtered list items
   }
 
+  //If filter is not empty, return matched list items into venues. If not, return the original list items.
   handleFilterVenues = () => {
     if (this.state.query.trim() !== "") {
       const venues = this.props.venues.filter(v => v.name.toLowerCase().includes(this.state.query.toLowerCase()))
@@ -16,6 +18,7 @@ class SideBar extends Component {
     return this.props.venues
   }
 
+  //If filter is changed, showing the matched markers on the map.
   handleChange = e => {
     this.setState({ query: e.target.value });
 

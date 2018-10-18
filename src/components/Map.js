@@ -18,6 +18,7 @@ const MyMapComponent = withScriptjs(withGoogleMap((props) =>
          animation = {arr.length === 1 ? google.maps.Animation.BOUNCE : google.maps.Animation.DROP}
          >
 
+         //If marker is opened, showing the details information such as name, rating, best photo
           {marker.isOpen &&
             venueInfo.bestPhoto && (
             <InfoWindow>

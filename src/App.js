@@ -16,7 +16,7 @@ class App extends Component {
       }
     }
 
-
+  //Default searching
   componentDidMount() {
       SquareAPI.search({
         near: "San Diego,CA",
@@ -39,6 +39,7 @@ class App extends Component {
       });
   }
 
+  //Close all markers
   closeAllMarkers = () => {
     const markers = this.state.markers.map(marker => {
       marker.isOpen = false;
@@ -47,12 +48,14 @@ class App extends Component {
     this.setState({ markers: Object.assign(this.state.markers, markers) });
   };
 
+  //List items on click, going to showing the corresponding marker
   handleListItemClick = (venue) => {
      const marker = this.state.markers.find(m => m.id === venue.id);
      this.handleMarkerClick(marker);
-    console.log(venue);
+    // console.log(venue);
   }
 
+  //Marker on click, going to close other markers and open the click one to show details information.
   handleMarkerClick = (marker) => {
     this.closeAllMarkers();
     marker.isOpen = true;
@@ -63,7 +66,7 @@ class App extends Component {
     SquareAPI.getDetail(marker.id).then(res => {
       const venueDetail  = Object.assign(venue, res.response.venue);
       this.setState({ venues: Object.assign(this.state.venues, venueDetail)})
-      console.log(venueDetail);
+      // console.log(venueDetail);
     });
 
   }
