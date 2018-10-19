@@ -40,8 +40,8 @@ class SideBar extends Component {
 
     return (
       <div className="sideBar">
-        <h1><a aria-label="Neighborhood Foodie Map" tabIndex="1" href="/">Neighborhood Foodie Map</a></h1>
-        <input role="textbox" aria-describedby="keywords-help" tabIndex="2" type={"search"} id={"search"} placeholder={"Filter venues"} onChange={this.handleChange} />
+        <h1><a aria-label="Neighborhood Foodie Map" tabIndex="0 " href="/">Neighborhood Foodie Map</a></h1>
+        <input aria-describedby="keywords-help" type={"search"} id={"search"} placeholder={"Filter venues"} onChange={this.handleChange} />
         <div id="keywords-help">Type a keyword to filter search result such as Mexician</div>
         <VenuesList {...this.props} venues={this.handleFilterVenues()} />
       </div>

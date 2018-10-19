@@ -9,7 +9,7 @@ class APIBuilder {
     const keys = {
       client_id : "TIG0P1XCRKAEZNHTPLQF4SJ4SD1DR2OFR0PHIZBQTCANLBNB",
       client_secret: "FK1F5BLFNSTMGV51EXJ5VI4CKVYDUIMVAKIVZFRHGER4GJZT",
-      v: "20181017"
+      v: "20181018"
     };
     return Object.keys(keys)
       .map(key => `${key}=${keys[key]}`)
@@ -35,11 +35,14 @@ class APIBuilder {
     return fetch(
       `${APIBuilder.baseURL()}${endpoint}?${APIBuilder.auth()}&${APIBuilder.buildURL(param)}`)
     .then(res => res.json())
-    .catch(err => console.err(err));
+    .catch(err => {
+      alert('Failed to fetch data from foursquare.')
+      window.alert("Foursquare error: " + err)});
   }
 }
 
 export default class SquareAPI {
+
   static search(urlParam){
     return APIBuilder.baseFetch(`search`, "GET", urlParam);
   }

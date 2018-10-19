@@ -24,6 +24,13 @@ In this project, which are including the following:
    - run `npm start` to start server
 4. Visit the site in your browser at http://localhost:3000
 
+** NOTICE: the `service worker` is implemented only in the production build. Please follow the steps to run the application in the production build.
+1. Open the terminal
+  - Go to the project folder.
+  - run `npm run build`
+  - run `serve -s build`
+2. Open the browser and navigate to http://localhost:5000
+
 ### Resource/Referencce
 1. [Udacity Neighborhood Map Project](https://www.google.com/url?q=http%3A%2F%2Ftiny.cc%2FNeighborhoodMapProject&sa=D&sntz=1&usg=AFQjCNEtiQETpKmU4YdDfYPMBCq7E44Avw)
 2. Neighborhood Map - YouTube Video (https://www.youtube.com/playlist?list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP)

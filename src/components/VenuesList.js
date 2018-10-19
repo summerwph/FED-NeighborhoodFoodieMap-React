@@ -5,7 +5,7 @@ import ListItem from './ListItem';
 class VenuesList extends Component {
   render() {
     return (
-      <ul className="venueList" >
+      <ul className="venueList" tabIndex="-1">
         {
           this.props.venues &&
           this.props.venues.map((venue, id) => <ListItem  key={id} {...venue} handleListItemClick={this.props.handleListItemClick}/>)}
