@@ -1,6 +1,5 @@
 # Neighborhood Map - React Project
 
-## Summary
 In this project, which are including the following:
 1. Loading the map. This repository uses [react-google-maps](https://tomchentw.github.io/react-google-maps/) with [Google Maps JavaScript API v3](https://developers.google.com/maps/documentation/javascript/). You need to replace `<your own API KEY HERE>` in Map.js file.
 2. Fetching data. This repository uses the following three API from [FOURSQUARE](https://developer.foursquare.com/) to get interested items:
@@ -23,6 +22,7 @@ In this project, which are including the following:
    - run `npm install` to install the dependency
    - run `npm start` to start server
 4. Visit the site in your browser at http://localhost:3000
+![HomePage](/img/ResFoodMap.png)
 
 ** NOTICE: the `service worker` is implemented only in the production build. Please follow the steps to run the application in the production build.
 1. Open the terminal
