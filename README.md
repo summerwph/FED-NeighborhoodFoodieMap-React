@@ -18,11 +18,11 @@ In this project, which are including the following:
 ### How to run the app
 1. Clone the game in local or unzip file to your local machine.
 2. Open the terminal
-   - Go to "reactnd-project-neighborhood-map" folder.
+   - Go to "FED-NeighborhoodFoodieMap-React" folder.
    - run `npm install` to install the dependency
    - run `npm start` to start server
 4. Visit the site in your browser at http://localhost:3000
-![HomePage](/img/ResFoodMap.png)
+![HomePage](/img/NeighborhoodFoodieMap.png)
 
 ** NOTICE: the `service worker` is implemented only in the production build. Please follow the steps to run the application in the production build.
 1. Open the terminal
