@@ -1,8 +1,8 @@
 # Neighborhood Map - React Project
 
-In this project, which are including the following:
+This project covers the following functionalities:
 1. Loading the map. This repository uses [react-google-maps](https://tomchentw.github.io/react-google-maps/) with [Google Maps JavaScript API v3](https://developers.google.com/maps/documentation/javascript/). You need to replace `<your own API KEY HERE>` in Map.js file.
-2. Fetching data. This repository uses the following three API from [FOURSQUARE](https://developer.foursquare.com/) to get interested items:
+2. Fetching data. This repository uses the following three API from [FOURSQUARE](https://developer.foursquare.com/) to get interesting items:
   - Search for Venues
   - Get Details of a Venue
   - Get a Venue's Photos
@@ -31,6 +31,6 @@ In this project, which are including the following:
   - run `serve -s build`
 2. Open the browser and navigate to http://localhost:5000
 
-### Resource/Referencce
+### Resource/References
 1. [Udacity Neighborhood Map Project](https://www.google.com/url?q=http%3A%2F%2Ftiny.cc%2FNeighborhoodMapProject&sa=D&sntz=1&usg=AFQjCNEtiQETpKmU4YdDfYPMBCq7E44Avw)
 2. Neighborhood Map - YouTube Video (https://www.youtube.com/playlist?list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP)
